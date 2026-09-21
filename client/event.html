@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details - Hope Foundation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand"><span class="brand-icon">♥</span> Hope Foundation</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html">Search Events</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div id="event-detail" class="detail-card">
+      <p class="loading">Loading event details...</p>
+    </div>
+  </main>
+
+  <!-- Modal shown when Register is clicked -->
+  <div id="register-modal" class="modal-overlay">
+    <div class="modal">
+      <h3>Register</h3>
+      <p>This feature is currently under construction.</p>
+      <button class="btn btn-primary" onclick="closeModal()">OK</button>
+    </div>
+  </div>
+
+  <footer class="footer"><p>&copy; 2026 Hope Foundation.</p></footer>
+
+  <script src="event.js"></script>
+</body>
+</html>

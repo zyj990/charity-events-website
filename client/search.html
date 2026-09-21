@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Events - Hope Foundation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand"><span class="brand-icon">♥</span> Hope Foundation</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="search.html" class="active">Search Events</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h2 class="section-title">Search Charity Events</h2>
+
+    <form id="search-form" class="search-form">
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date">
+
+      <label for="location">Location (keyword)</label>
+      <input type="text" id="location" name="location" placeholder="e.g. Sydney, Park...">
+
+      <label for="category">Category</label>
+      <select id="category" name="category">
+        <option value="">-- All categories --</option>
+      </select>
+
+      <div class="search-actions">
+        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="reset" id="clear-btn" class="btn btn-secondary">Clear Filters</button>
+      </div>
+    </form>
+
+    <div id="error-box" class="error-msg"></div>
+    <div id="results" class="event-grid"></div>
+  </main>
+
+  <footer class="footer"><p>&copy; 2026 Hope Foundation.</p></footer>
+
+  <script src="search.js"></script>
+</body>
+</html>
